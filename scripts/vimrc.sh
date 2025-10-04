@@ -11,6 +11,5 @@ if [ -f "$TARGET" ]; then
   cp "$TARGET" "$BACKUP"
 fi
 
-curl https://raw.github.com/tsoommo/tsoomo_vim/master/vimrc /tmp/vimrc-repo
-cp /tmp/vimrc-repo/.vimrc "$TARGET"
-rm -rf /tmp/vimrc-repo
+# Download the .vimrc directly
+curl -fsSL https://raw.githubusercontent.com/tsoommo/tsoomo_vim/master/vimrc -o "$TARGET"
