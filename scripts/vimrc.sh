@@ -12,4 +12,4 @@ if [ -f "$TARGET" ]; then
 fi
 
 # Download the .vimrc directly
-curl -fsSL https://raw.githubusercontent.com/tsoommo/tsoomo_vim/master/vimrc -o "$TARGET"
+curl -fsSL https://raw.githubusercontent.com/tsoomo/tsoomo_vim/master/vimrc -o "$TARGET"
